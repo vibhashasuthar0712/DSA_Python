@@ -59,3 +59,22 @@ class Solution:
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
+Question3: Reverse the given array `arr[]`. Reversing an array means rearranging its elements so that the first element becomes the last, the second element becomes the second‑last, and so on.
+
+**Example 1:**
+Input: arr[] = [1, 4, 3, 2, 6, 5]
+Output: [5, 6, 2, 3, 4, 1]
+Explanation: The element `1` moves to the last position, `4` moves to the second‑last, etc.
+
+SOLUTION:
+
+new_arr=[]
+class Solution:
+    def flipArray(self, arr):
+        for i in range(len(arr)-1,-1,-1):
+            new_arr.append(arr[i])
+        return new_arr
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
