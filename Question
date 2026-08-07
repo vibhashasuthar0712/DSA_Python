@@ -39,3 +39,27 @@ class Solution:
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+
+Question2: Given an integer array `arr`, determine whether the elements are arranged in non‑decreasing order (each element is **less than or equal to** the next one). Equal values are allowed, and any pair of consecutive equal values is considered sorted. Return `true` if the entire array satisfies this condition; otherwise, return `false`.
+
+**Example 1:**
+Input: arr = [5, 12, 12, 20, 35]
+Output: true
+Explanation: Every element is less than or equal to the one that follows, so the array is sorted.
+
+**Example 2:**
+Input: arr = [30, 25, 40, 10]
+Output: false
+
+SOLUTION:
+class Solution:
+    def isAscending(self, arr):
+       
+        for i in range(len(arr)-1):
+            if arr[i]>arr[i+1]:
+                return False
+        return True
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
