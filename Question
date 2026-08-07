@@ -78,3 +78,75 @@ class Solution:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
+Question4: Given the head of a singly linked list, return the middle node of the list.
+
+- If the list contains an odd number of nodes, there is a single middle node; return that node.
+- If the list contains an even number of nodes, there are two middle nodes; return the second one (the one that appears later in the list).
+
+### Example
+
+```
+Input: 1 → 2 → 3 → 4 → 5
+Output: Node with value 3
+Explanation: The list has 5 nodes, so the middle node is the 3rd node, which holds the value 3.
+```
+
+### Example
+
+```
+Input: 10 → 20 → 30 → 40 → 50 → 60
+Output: Node with value 40
+Explanation: The list has 6 nodes. The two middle nodes are 30 and 40; according to the rule we return the second middle node, which holds the value 40.
+```
+
+SOLUTION:
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+class Solution:
+    def middleNode(self, head): 
+        slow=head
+        fast=head
+        while fast and fast.next:
+            slow=slow.next
+            fast=fast.next.next
+        return slow
+
+
+Question5:Given the reference to the first node of a singly linked list, rearrange the list so that its order is reversed, and return the reference to the new first node.
+
+**Example:**
+
+```
+Input: 1 → 2 → 3 → 4 → 5
+Output: 5 → 4 → 3 → 2 → 1
+```
+
+**Example:**
+
+```
+Input: 10 → 20 → 30
+Output: 30 → 20 → 10
+```
+
+SOLUTION:
+class Solution:
+    def flipLinkedList(self, head):
+        """
+        Reverses the singly linked list.
+
+        :param head: ListNode or None - the head of the linked list.
+        :return: ListNode or None - the new head of the reversed list.
+        """
+        prev=None
+        current=head
+        next_node=None
+        while current:
+            next_node=current.next
+            current.next=prev
+            prev=current
+            current=next_node
+        head=prev
+        return head # placeholder
