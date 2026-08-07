@@ -119,28 +119,17 @@ Question5:Given the reference to the first node of a singly linked list, rearran
 and return the reference to the new first node.
 
 **Example:**
-
-```
 Input: 1 → 2 → 3 → 4 → 5
 Output: 5 → 4 → 3 → 2 → 1
-```
+
 
 **Example:**
-
-```
 Input: 10 → 20 → 30
 Output: 30 → 20 → 10
-```
 
 SOLUTION:
 class Solution:
     def flipLinkedList(self, head):
-        """
-        Reverses the singly linked list.
-
-        :param head: ListNode or None - the head of the linked list.
-        :return: ListNode or None - the new head of the reversed list.
-        """
         prev=None
         current=head
         next_node=None
@@ -151,3 +140,4 @@ class Solution:
             current=next_node
         head=prev
         return head # placeholder
+--------------------------------------------------------------------------------------------------------------------------------------
