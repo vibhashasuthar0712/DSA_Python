@@ -36,7 +36,8 @@ class Solution:
 --------------------------------------------------------------------------------------------------------------------------------------
 
 
-Question2: Given an integer array `arr`, determine whether the elements are arranged in non‑decreasing order (each element is **less than or equal to** the next one). Equal values are allowed, and any pair of consecutive equal values is considered sorted. Return `true` if the entire array satisfies this condition; otherwise, return `false`.
+Question2: Given an integer array `arr`, determine whether the elements are arranged in non‑decreasing order 
+(each element is **less than or equal to** the next one). Equal values are allowed, and any pair of consecutive equal values is considered sorted. Return `true` if the entire array satisfies this condition; otherwise, return `false`.
 
 **Example 1:**
 Input: arr = [5, 12, 12, 20, 35]
@@ -59,7 +60,8 @@ class Solution:
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
-Question3: Reverse the given array `arr[]`. Reversing an array means rearranging its elements so that the first element becomes the last, the second element becomes the second‑last, and so on.
+Question3: Reverse the given array `arr[]`. Reversing an array means rearranging its elements so that the first element becomes the last,
+the second element becomes the second‑last, and so on.
 
 **Example 1:**
 Input: arr[] = [1, 4, 3, 2, 6, 5]
@@ -81,7 +83,7 @@ class Solution:
 Question4: Given the head of a singly linked list, return the middle node of the list.
 
 - If the list contains an odd number of nodes, there is a single middle node; return that node.
-- If the list contains an even number of nodes, there are two middle nodes; return the second one (the one that appears later in the list).
+- If the list contains an even number of nodes, there are two middle nodes; return the second one (the one that appears later in the list)
 
 ### Example
 Input: 1 → 2 → 3 → 4 → 5
@@ -92,7 +94,8 @@ Explanation: The list has 5 nodes, so the middle node is the 3rd node, which hol
 ### Example
 Input: 10 → 20 → 30 → 40 → 50 → 60
 Output: Node with value 40
-Explanation: The list has 6 nodes. The two middle nodes are 30 and 40; according to the rule we return the second middle node, which holds the value 40.
+Explanation: The list has 6 nodes. The two middle nodes are 30 and 40; according to the rule 
+we return the second middle node, which holds the value 40.
 
 
 SOLUTION:
@@ -110,8 +113,10 @@ class Solution:
             fast=fast.next.next
         return slow
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
-Question5:Given the reference to the first node of a singly linked list, rearrange the list so that its order is reversed, and return the reference to the new first node.
+Question5:Given the reference to the first node of a singly linked list, rearrange the list so that its order is reversed, 
+and return the reference to the new first node.
 
 **Example:**
 
