@@ -184,3 +184,78 @@ class Solution(object):
             tail.next=list2
 
         return dummy.next
+
+
+
+                       -----------------------------------OR-----------------------------------
+
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+
+node1=Node(1)
+node2=Node(2)
+node3=Node(3)
+node4=Node(4)
+node5=Node(5)
+node6=Node(6)
+node7=Node(7)
+node8=Node(8)
+
+node1.next=node3
+node3.next=node5
+node5.next=node7
+
+node2.next=node4
+node4.next=node6
+node6.next=node8
+
+list1=node1
+list2=node2
+current=list1
+print("List1:")
+while current:
+    print(current.data,end="->")
+    current=current.next
+print("None")
+
+print("\n")
+
+
+list2=node2
+current=list2
+print("List2:")
+while current:
+    print(current.data,end="->")
+    current=current.next
+print("None")
+
+
+def mergeTwoSortedLists(list1, list2):
+    dummy=Node(0)
+    tail=dummy
+    while list1 and list2:
+        if list1.data<list2.data:
+            tail.next=list1
+            list1=list1.next
+        else:   
+            tail.next=list2
+            list2=list2.next
+        tail=tail.next
+
+    if list1:
+        tail.next = list1
+    else:
+        tail.next = list2
+
+    return dummy.next
+
+merged_list=mergeTwoSortedLists(list1,list2)
+print("\nMerged List:")
+current=merged_list
+while current:      
+    print(current.data,end="->")
+    current=current.next    
+print("None")
+
