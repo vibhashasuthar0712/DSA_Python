@@ -294,6 +294,7 @@ class Solution(object):
             second=second.next
 
         return True
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Question 8: Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.
@@ -316,3 +317,5 @@ class Solution(object):
             else:
                 current=current.next
         return head
+
+--------------------------------------------------------------------------------------------------------------------------------------
