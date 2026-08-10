@@ -423,5 +423,7 @@ class Solution(object):
                 p2=p2.next
         return p1
 
+
+Important: Yahan bhi hum data/val compare nahi karte.
 --------------------------------------------------------------------------------------------------------------------------------------
 
