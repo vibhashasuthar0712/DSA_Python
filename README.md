@@ -28,8 +28,6 @@ This repository contains a **menu-driven implementation of a Singly Linked List 
 
 * Python 3
 
----
-
 ## 📚 Concepts Covered
 
 * Linked List Basics
