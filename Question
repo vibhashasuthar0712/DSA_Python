@@ -780,3 +780,21 @@ class Solution(object):
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Question: 15
+Next_greater element in a single array:
+
+solution:
+def next_greater(a):
+    stack = []
+    result = [-1] * len(a)
+
+    for i in range(len(a) - 1, -1, -1):
+
+        while stack and stack[-1] <= a[i]:
+            stack.pop()
+
+        if stack:
+            result[i] = stack[-1]
+
+        stack.append(a[i])
+
+    return result
