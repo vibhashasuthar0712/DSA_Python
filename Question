@@ -780,7 +780,7 @@ class Solution(object):
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Question: 15
-Next_greater element in a single array: 
+Next_greater element in a single array: (stack optimized approach)
 a = [4, 7, 5, 10]
 
 solution:
@@ -799,3 +799,8 @@ def next_greater(a):
         stack.append(a[i])
 
     return result
+
+
+
+Brute force → O(n²)
+Stack optimized → O(n)
