@@ -780,7 +780,8 @@ class Solution(object):
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Question: 15
-Next_greater element in a single array:
+Next_greater element in a single array: 
+a = [4, 7, 5, 10]
 
 solution:
 def next_greater(a):
