@@ -804,3 +804,7 @@ def next_greater(a):
 
 Brute force → O(n²)
 Stack optimized → O(n)
+
+
+
+Question: 16:
