@@ -490,8 +490,8 @@ The value of the given node should not exist in the linked list.
 The number of nodes in the linked list should decrease by one.
 All the values before node should be in the same order.
 All the values after node should be in the same order.
-Custom testing:
 
+Custom testing:
 For the input, you should provide the entire linked list head and the node to be given node. node should not be the last node of the list and should be an actual node in the list.
 We will build the linked list and pass the node to your function.
 The output will be the entire list after calling your function.
@@ -575,10 +575,7 @@ class Solution(object):
 
 Quetion14:
 707. Design Linked List
-Medium
-Topics
-premium lock icon
-Companies
+
 Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 A node in a singly linked list should have two attributes: val and next. val is the value of the current node, and next is a pointer/reference to the next node.
 If you want to use the doubly linked list, you will need one more attribute prev to indicate the previous node in the linked list. Assume all nodes in the linked list are 0-indexed.
