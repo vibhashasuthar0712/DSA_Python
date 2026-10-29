@@ -121,12 +121,12 @@ class Solution:
 Question5:Given the reference to the first node of a singly linked list, rearrange the list so that its order is reversed, 
 and return the reference to the new first node.
 
-**Example:**
+Example:1
 Input: 1 → 2 → 3 → 4 → 5
 Output: 5 → 4 → 3 → 2 → 1
 
 
-**Example:**
+Example:2
 Input: 10 → 20 → 30
 Output: 30 → 20 → 10
 
